@@ -15,9 +15,9 @@ async function getNew() {
     quoteNum = Math.floor(Math.random() * loadedData.length+1);
     quote.innerHTML = loadedData[quoteNum].text;
     if(loadedData[quoteNum].author == null) {
-        quoteAuthor.innerHTML = "Unknown";
+        quoteAuthor.innerHTML ="- "+"Unknown";
     }else {
-        quoteAuthor.innerHTML = loadedData[quoteNum].author;
+        quoteAuthor.innerHTML ="- " + loadedData[quoteNum].author;
     }
 }
 
